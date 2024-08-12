@@ -1,3 +1,12 @@
+function goToPageSMS() {
+  window.location.href = "./SpectrumMediaSudio/SpectrumMediaSudioindex.html";
+}
+function goToPagevosad() {
+  window.location.href = "./vosAddGQL/public/indexvosadd.html";
+}
+function goToPageProStream() {
+  window.location.href = "./ProstreamAPI/ProStreamXRESTfulAPI.htm";
+}
 function goToPage1Recorded() {
   window.location.href = "./SpectrumMediaSudio/SpectrumMediaSudioindex.html";
 }
