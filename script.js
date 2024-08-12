@@ -65,7 +65,7 @@ function goToPage12Recorded() {
   window.location.href = "demo9-XOS-Playout-recorded.html";
 }
 function goToPage20Recorded() {
-  window.location.href = "Production-and-Playout-demo3-Spectrum-recorded.html";
+  window.location.href = "./vosAddGQL/public/indexvosadd.html";
 }
 function goToPage13Recorded() {
   window.location.href = "Broadcast-and-Distribution-demo1-recorded.html";
