@@ -20,7 +20,7 @@ function goToPage40() {
   window.location.href = "KeyProducts-full-screen.html";
 }
 function goToPage5Recorded() {
-  window.location.href = "Live_Sport_demo1-sport-streaming-recorded.html";
+  window.location.href = "./ProstreamAPI/ProStreamXRESTfulAPI.htm";
 }
 function goToPage5Live() {
   window.location.href = "Live_Sport_demo1-sport-streaming-live.html";
