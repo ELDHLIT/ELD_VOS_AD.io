@@ -11,6 +11,9 @@ function goToPageTheneo() {
   window.location.href = "https://app.theneo.io/harmonicinc/vos_ad_august12th_public/api-reference";
 }
 
+function goToPageNMX() {
+  window.location.href = "./NMX/NMXindex.html";
+}
 function goToPage1Recorded() {
   window.location.href = "./SpectrumMediaSudio/SpectrumMediaSudioindex.html";
 }
