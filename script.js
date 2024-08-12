@@ -62,7 +62,7 @@ function goToPage11Live() {
   window.location.href = "demo5c-broadcast-playout-FLOWICS-TV-live.html";
 }
 function goToPage12Recorded() {
-  window.location.href = "demo9-XOS-Playout-recorded.html";
+  window.location.href = "./vosAddGQL/public/indexvosadd.html";
 }
 function goToPage20Recorded() {
   window.location.href = "./vosAddGQL/public/indexvosadd.html";
