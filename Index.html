@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles-index.css">
+		<title>demos_home</title>
+		
+		<style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .column {
+            /*width: 20%;*/
+            width: 35vh;
+            padding-top: 2%;
+            padding-right:2%;
+            padding-left:2%;
+            padding-bottom:1%;
+            border-radius:20px;
+         }
+         .carre_rond{
+             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 35vh;
+            }
+        .blue:hover{ 
+ 	  	 background-color: rgb(25,50,75);
+ 	  	 opacity: 0.87; 	
+  	  }
+     	.grey:hover{ 
+		    background-color: rgb(49,60,84);
+		    opacity: 0.87;
+ 	   }  
+         .green:hover{ 
+ 	  	 background-color: rgb(31,49,54);
+ 	  	 opacity: 0.87;
+  	  }
+     	.orange:hover{ 
+		    background-color: rgb(52,56,51);
+		    opacity: 0.87;
+ 	   }  	   
+ 	   
+    </style>
+		
+	</head>
+
+	<body>
+	
+	<div class= "home-page-header">
+		<a href="Demos-home.html" class="back-button_Top">home</a>  <!-- bouton transparent pour Home page -->
+		<a href="Demos-home.html" class="live-recorded-toggle-button">Partners</a>
+	</div>    
+
+	<div class="home-text-page-header">
+		<h1>Discover Harmonic's API and more</h1>
+	</div>  	
+	
+<!-- Rectangle Bleu -->
+	<div class="containerTOP">
+		<div class="rowTOP">
+		    <div class="rectangleTOP" onclick="goToPage40()"> Discover&nbsp&nbsp&nbsp&nbsp&nbsp; <!-- Page principale - solutions - full screen -->
+			</div>
+		</div>
+	</div>
+
+<!-- ELD: the container was removed and each item in the container was placed as the first element of each column -->
+<!-- <div class="containerBottom"> -->
+		<!-- 	<div class="containerRonds">
+		<div class="rowRonds">
+			<div class="rondTop1" ></div>
+			<div class="rondTop2" ></div>
+			<div class="rondTop3" ></div>
+			<div class="rondTop4" ></div>
+		</div>
+	</div>
+-->
+		
+<!-- ELD: the container was removed and each item in the container was placed as the second element of each column -->		
+		<!--	<div class="containerTextes"> -->
+<!-- Rectangles de couleur pour chaque catégorie : non interactifs -->
+		<!--		<div class="rowTexte">
+			<div class="rectangleTexte1" >Production & Playout</div>
+			<div class="rectangleTexte2" >Broadcast & Distribution</div>
+			<div class="rectangleTexte3" >Live Sports</div>
+			<div class="rectangleTexte4" >Monetization</div>
+		</div>
+	</div>-->
+
+
+		<!-- ELD: creation of a "container" that contains four "columns"   -->
+		
+		<div class="container">
+			<!-- FIRST Column   -->
+			<!-- FIRST Column is of class blue  -->
+			<!-- Each item rondTop1 , rectangleTexte1 , rectangle1 were taken from their former container and put in column here   -->
+			<!-- Calls to JavaScript left untouched   -->
+			<div class="column blue">
+				<div class="carre_rond">
+					<div class="rondTop1" ></div>
+				</div>
+				<div class="rectangleTexte1" >VOS AD API</div>
+				<div class="rectangle1" onclick="goToPage12Recorded()">
+					Access GraphQL API <br>generated from SpectaQL
+				</div>
+				<div class="rectangle1" onclick="goToPage7Recorded()">
+					<!--<div class="zoom" > -->
+					Reserved for Future Use
+					<!--</div> -->
+				</div>
+				<div class="rectangle1" onclick="goToPage20Recorded()">
+					<!--<div class="zoom" > -->
+					Reserved for Future Use
+					<!--</div> -->
+
+				</div>
+			</div>
+			<!-- SECOND Column   -->
+			<!-- SECOND Column is of class grey  -->
+			<!-- SECOND item rondTop1 , rectangleTexte1 , rectangle1 were taken from their former container and put in column here   -->
+			<!-- Calls to JavaScript left untouched   -->
+			<div class="column grey" >
+				<div class="carre_rond">
+					<div class="rondTop2" ></div>
+				</div>
+				<div class="rectangleTexte2" >NMX API</div>
+				<div class="rectangle2" onclick="goToPage13Recorded()">
+					<!--<div class="zoom" > -->
+					Access NMX API
+					<!--</div> -->
+				</div>
+				<div class="rectangle2" onclick="goToPage14Recorded()">
+					<!--<div class="zoom" > -->
+					Reserved for Future Use
+					<!--</div> -->
+				</div>
+				<div class="rectangle2" onclick="goToPage16Recorded()">
+					<!--<div class="zoom" > -->
+					Reserved for Future Use
+					<!--</div> -->
+				</div>
+			</div>
+			<!-- THIRD Column   -->
+			<!-- THIRD Column is of class green  -->
+			<!-- THIRD item rondTop1 , rectangleTexte1 , rectangle1 were taken from their former container and put in column here   -->
+			<!-- Calls to JavaScript left untouched   -->
+			<div class="column green" >
+				<div class="carre_rond">
+					<div class="rondTop3" ></div>
+				</div>
+				<div class="rectangleTexte3" >Prostream API</div>
+				<div class="rectangle3" onclick="goToPage5Recorded()">
+					<!--<div class="zoom" > -->
+					Access Prostream API
+					<!--</div> -->
+				</div>
+				<div class="rectangle3" onclick="goToPage6Recorded()">
+					<!--<div class="zoom" > -->
+					Reserved for Future Use
+					<!--</div> -->
+				</div>
+				<div class="rectangle3" onclick="goToPage17Live()">
+					<!--<div class="zoom" > -->
+					Reserved for Future Use
+					<!--</div> -->
+				</div>
+			</div>
+			<!-- FOURTH Column   -->
+			<!-- FOURTH Column is of class orange  -->
+			<!-- FOURTH item rondTop1 , rectangleTexte1 , rectangle1 were taken from their former container and put in column here   -->
+			<!-- Calls to JavaScript left untouched   -->
+			<div class="column orange">
+				<div class="carre_rond">
+					<div class="rondTop4" ></div>
+				</div>
+				<div class="rectangleTexte4" >My Product API</div>
+				<div class="rectangle4" onclick="goToPage1Recorded()">
+					<!--<div class="zoom" > -->
+					Reserved for Future Use
+					<!--</div> -->
+				</div>
+				<div class="rectangle4" onclick="goToPage9Recorded()">
+					<!--<div class="zoom" > -->
+					Reserved for Future Use
+					<!--</div> -->
+				</div>
+				<div class="rectangle4" onclick="goToPage2Recorded()">
+					<!--<div class="zoom" > -->
+					Reserved for Future Use
+					<!--</div> -->
+				</div>
+			</div>
+		</div>
+		
+		
+		
+
+	<script src="script.js"></script>
+	</body>
+</html>
