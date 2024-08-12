@@ -1,0 +1,510 @@
+	:root {
+		--light-grey: rgba(228, 229, 230, 0.75);
+		--light-blue: rgb(36, 177, 217);
+		--dark-blue: rgb(28,53,94);
+	}
+
+@font-face {
+    font-family: 'Neris';
+	src: local('Neris SemiBold'), 
+        url('Neris-SemiBold.woff2') format('woff2'),
+        url('Neris-SemiBold.woff') format('woff'),
+        url('Neris-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    /* src: url('chemin/vers/le/fichier-de-police.ttf') format('truetype'); */
+    /* Ajoutez d'autres formats de police si nécessaire (eot, woff, woff2, etc.) */
+}
+
+	body{
+			background-image: url('Harmonic_Background_Top.jpg');
+			background-size: cover; /* Ajustez cette propriété selon vos besoins */
+			background-position-x :  left;
+			background-position-y :  top;
+			background-repeat: no-repeat; /* Empêche la répétition de l'image */
+			font-family: Neris, sans-serif;
+			/* font-family: Neris-SemiBold , sans-serif ; */ 
+		}
+		html {
+			font-size: 16px;
+		}
+		
+		h1 {
+			/* Harmonic's Streaming & Broadcast Demos - text Display */
+			/* display: inline-block; */ 
+			/* Layout Properties */
+			color: white;
+			font-weight: normal;
+			letter-spacing: 1px;
+			font-size:   4.3vh; /* xx fois la taille de police de base */ 
+		    font-weight : bolder;
+			justify-content: center;
+			align-items: center;
+		    letter-spacing: 1px;
+			font-family: Neris, sans-serif;
+		}
+
+		/* Zoom pour les textes situés dans les Rectangles d'acces aux demos */
+		.zoom:hover {
+			font-size: 105%;
+			transition:1.0s;
+		}
+		/* Ligne bouton Home  */		
+		.home-page-header {
+		  display: flex;
+		  align-items: center;
+		  justify-content: space-between;
+		  font-weight : thin;
+		  font-size:   1vh;
+		  height: 5vh;
+		}
+		/* Ligne Texte Harmonic's Streaming & Broadcast Demos  */		
+		.home-text-page-header {
+		  display: flex;
+		  align-items: center;
+		  text-align: center;
+		  justify-content: center;
+		  height: 7vh;
+		}
+		.back-button {
+			color: var(--light-blue);
+			border: none;
+			font-size: 2vh;
+			padding: 0.5vh 2vh;
+			cursor: pointer;
+		}
+		.back-button_Top {	          /* bouton transparent pour les pages TOP */
+			color: transparent;
+			border: none;
+			font-size: 2vh;
+			padding: 0.5vh 2vh;
+			cursor: pointer;
+		}
+		.live-recorded-toggle-button {
+			color: #24b1d9;			/* couleur Bleu */
+			border: none;
+			font-size: 1.8vh;
+			padding: 0.5vh 2vh;
+			cursor: pointer;
+			text-decoration: none;
+}
+		.live-recorded-toggle-button span {
+            color: #555; 			/* Couleur du texte gris */
+        }
+
+		.containerTOP {  			/* Bouton Discover - acces à la page Key Components */
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+		  justify-content: center;
+		  height: 5vh;
+		  margin-top:5vh ;
+		}
+		
+		.containerRonds {			/* Ronds avec photos  */
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+		  justify-content: center;
+		  height: 15vh;
+		  margin-top:3vh ;
+		  margin-bottom:5vh ;
+		}
+
+		.containerTextes {			/* textes  */
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+		  justify-content: center;
+		  height: 14vh;
+		  margin-top:0vh ;
+		  margin-bottom:0vh ;
+		}
+		
+		.containerBottom {			/* Rectangles d'accès aux demos   */
+		  display: flex;
+		  flex-direction: column;
+		  align-items: center;
+		  justify-content: center;
+		  height: 34vh;
+		  margin-top:0vh ;
+		  margin-bottom:0vh ;
+		}
+
+		.rowTOP {					/* Ligne Discover : Key components */
+		  display: flex;
+		  justify-content: space-around;
+		  width: 97.5%;
+		  height: 5vh;
+		}
+		
+		.rowRonds {					/* Lignes des vignettes rondes */
+		  display: flex;
+		  justify-content: space-around;
+		  width: 98%;
+		  height: 12vh;
+		}	
+
+		.rowTexte {						/* Lignes des Textes en couleur aux dessus des rectangles d'acces aux demos */
+		  display: flex;
+		  justify-content: space-around;
+		  width: 98%;
+		  height: 8vh;
+		}	
+		
+		.row {							/* Lignes des briques d'acces aux demos */
+		  display: flex;
+		  justify-content: space-around;
+		  width: 98%;
+		  height: 20vh;
+		}
+		
+		/* .rectangleTOP:hover {	*/ 	/* Bouton Discover  */
+		 /* font-size: 1.6vh;	*/ 		/* effet zoom sur texte Discover au survol de la souris */
+		 /* transition:1.0s; */ 
+		 /* overflow: hidden; */ 
+		 /*  color :#24B1D9; */ 
+		/* }	*/ 			
+		.rectangleTOP {			 	/* Bouton Discover  */ 
+		  box-sizing: border-box; 	/* inclus la bordure dans la taille de la box */ 
+		  width: 12vh;
+		  height: 3vh;
+		  border-radius:10vh;
+		  margin: 0vh;
+		  display: flex;
+		  text-align: center;
+		  align-items: center;
+		  justify-content: right;
+		  color: #1C355E; 
+		  font-size: 1.7vh;
+		  font-weight :  bolder;
+		  background-color: white;	/* Blanc */
+		  background-image: url('blue_arrow.png');  	/* Nom de fichier Logo à insérer dans rectangle TOP  */  
+		  /* background-size:  10% ; 	 			        /* auto size en X, taux de réduction en Y */
+		  background-size:  3vh; 
+		  background-position-x : 0% ;
+		  background-position-y : 0.23vh ;   /* 50% pas tout a fait centré ... */ 
+		  background-repeat: no-repeat; 	/* Empêche la répétition de l'image */ 
+		  cursor: pointer;
+		  /* border-style:solid;
+		  border-width: 1px;
+		  border-color: #FFC000; 		/* Couleur Orange */
+		}
+
+		.rondTop1 {				/* Rond categorie "Production & Playout" */
+		  width: 20vh;
+		  height: 20vh;
+		  border-radius:20vh;
+		  /*  margin: 0vh;*//* removed ELD  */
+		  margin-left:0; /* Added ELD  */
+		  margin-right:0; /* Added ELD  */
+		  margin-top:0; /* Added ELD  */
+		  margin-bottom:0; /* Added ELD  */
+		  display: flex; 
+		  text-align: center;
+		  align-items: center;
+		  justify-content: center;
+		  color: Black;
+		  font-size: 2.5vh;
+		  font-weight : bold;
+		  background-image: url('Rond-1.jpg');
+		  background-size:  150% ,  150%; 			/* auto size en X, taux de réduction en Y */
+		  cursor: default;
+		  border-style:solid;
+		  border-width: 8px;
+		  border-color: #24b1d9; /*#BCBEC0; /* Couleur bleu */
+		}
+		.rondTop2 {				/* Rond categorie "Broadcast & Distribution" */
+		  width: 20vh;
+		  height: 20vh;
+		  border-radius:20vh;
+		  /*  margin: 0vh;*//* removed ELD  */
+		  margin-left:0; /* Added ELD  */
+		  margin-right:0; /* Added ELD  */
+		  margin-top:0; /* Added ELD  */
+		  margin-bottom:0; /* Added ELD  */
+		  display: flex;
+		  text-align: center;
+		  align-items: center;
+		  justify-content: center;
+		  color: Black; 
+		  font-size: 2.5vh;
+		  font-weight : bold;
+		  background-image: url('Rond-2.jpg');
+		  background-size:  180% ,  180%; 			/* auto size en X, taux de réduction en Y */
+		  cursor: default;
+		  border-style:solid;
+		  border-width: 8px;
+		  border-color: #BCBEC0; /* Couleur Gris */
+		}
+		.rondTop3 {				/* Rond categorie "Live Sport" */
+		  width: 20vh;
+		  height: 20vh;
+		  border-radius:20vh;
+		  /*  margin: 0vh;*//* removed ELD  */
+		  margin-left:0; /* Added ELD  */
+		  margin-right:0; /* Added ELD  */
+		  margin-top:0; /* Added ELD  */
+		  margin-bottom:0; /* Added ELD  */
+		  display: flex;
+		  text-align: center;
+		  align-items: center;
+		  justify-content: center;
+		  color: Black; 
+		  font-size: 2.5vh;
+		  font-weight : bold;
+		  background-image: url('Rond-3.jpg');
+		  background-size:  20.5vh; 
+		  background-position-x : 50% ;
+		  background-position-y : 50% ;
+		  /* background-size:  100% ,  110%;  			/* auto size en X, taux de réduction en Y */
+		  cursor: default;
+		  border-style:solid;
+		  border-width: 8px;
+		  border-color: #81BC00; /* #1AC7B7; /* Couleur verte */
+		}
+		.rondTop4 {					/* Rond categorie "Monetization" */
+		  width: 20vh;
+		  height: 20vh;
+		  border-radius:20vh;
+		  /*  margin: 0vh;*//* removed ELD  */
+		  margin-left:0; /* Added ELD  */
+		  margin-right:0; /* Added ELD  */
+		  margin-top:0; /* Added ELD  */
+		  margin-bottom:0; /* Added ELD  */
+		  display: flex;
+		  text-align: center;
+		  align-items: center;
+		  justify-content: center;
+		  color: Black; 
+		  font-size: 2.5vh;
+		  font-weight : bold;
+		  background-image: url('Rond-4.jpg');
+		  background-size:  100% ,  100%; 			/* auto size en X, taux de réduction en Y */
+		  cursor: default;
+		  border-style:solid;
+		  border-width: 8px;
+		  border-color: #FFC000; /* Couleur Orange */
+		}
+
+		.rectangleTexte1 {
+		  width: 35vh; /* ELD changed, was 21% */
+		  height: 10vh;
+		  /*border-radius:20vh; */ 
+		  margin: 0vh;
+		  display: flex;
+		  text-align: center;
+		  align-items: center;
+		  justify-content: center;
+		  color: #24b1d9;
+		  font-size: 3vh;
+		  letter-spacing: 0px;
+		  font-weight : normal ; /* bold; */ 
+		  background-color: transparent;  
+		  cursor: default;
+		  /*border-style:solid;
+		  border-width: 4px;
+		  border-color: #24b1d9; /*#BCBEC0; /* Couleur gris */ 
+		}
+		.rectangleTexte2 {
+		  width: 35vh; /* ELD changed, was 21% */
+		  height: 10vh;
+		  /*border-radius:20vh; */ 
+		  margin: 0vh;
+		  display: flex;
+		  text-align: center;
+		  align-items: center;
+		  justify-content: center;
+		  color: #BCBEC0;
+		  font-size: 3vh;
+		  letter-spacing: 0px;
+		  font-weight : normal ; /*bold; */
+		  background-color: transparent;  
+		  cursor: default;
+		  /*border-style:solid;
+		  border-width: 4px;
+		  border-color: #24b1d9; /*#BCBEC0; /* Couleur gris */ 
+		}
+		.rectangleTexte3 {
+		  width: 35vh; /* ELD changed, was 21% */
+		  height: 10vh;
+		  /*border-radius:20vh; */ 
+		  margin: 0vh;
+		  display: flex;
+		  text-align: center;
+		  align-items: center;
+		  justify-content: center;
+		  color: #81BC00;
+		  font-size: 3vh;
+		  letter-spacing: 0px;
+		  font-weight : normal ; /*bold; */
+		  background-color: transparent;  
+		  cursor: default;
+		  /*border-style:solid;
+		  border-width: 4px;
+		  border-color: #24b1d9; /*#BCBEC0; /* Couleur gris */ 
+		}
+		.rectangleTexte4 {
+		  width: 35vh; /* ELD changed, was 21% */
+		  height: 10vh;
+		  /*border-radius:20vh; */ 
+		  margin: 0vh;
+		  display: flex;
+		  text-align: center;
+		  align-items: center;
+		  justify-content: center;
+		  color: #FFC000;
+		  font-size: 3vh;
+		  letter-spacing: 0px;
+		  font-weight : normal ; /*bold; */
+		  background-color: transparent;  
+		  cursor: default;
+		  /*border-style:solid;
+		  border-width: 4px;
+		  border-color: #24b1d9; /*#BCBEC0; /* Couleur gris */ 
+		}
+		
+/* INVERSION COULEUR BORDURE / FOND */
+		.rectangle1:hover {
+		  /*  border-color: White; *//* Couleur */ /* ELD: removed 23-02-24 */
+		  /*  opacity: 0;*/
+		  background-color: #24b1d9; /* Couleur Gris */
+		  /* color: black; */ 
+		  /* transition-timing-function: ease-in-out; */
+		  /* text-transform: uppercase; */ 
+		  /* text-shadow: 5px 5px 10px blue; */ 
+		  /* text-decoration: underline; */ 
+		}		
+		.rectangle1 {
+		  width: 35vh;
+		  height: 8.5vh;
+		  /*  margin: 0vh;*//* removed ELD  */
+		  margin-left:0; /* Added ELD  */
+		  margin-right:0; /* Added ELD  */
+		  margin-top:2vh; /* Added ELD  */
+		  margin-bottom:0; /* Added ELD  */
+		  border-radius:5px;
+		  display: flex;
+		  text-align: center;
+		  align-items: center;
+		  justify-content: center;
+		  color: white; 
+		  font-size: 2.1vh;
+		  font-weight : normal ; /*bold; */
+		  /* font-weight : bold; */
+		  letter-spacing: 1px;
+		  background-color: transparent; 
+		  cursor: pointer;
+		  border-style:solid;
+		  border-width: 3px;
+		  border-color: #24b1d9; /* Couleur Gris */
+		  /*  transition:0.5s;*/ /*  ELD removed 23-2-24 */
+		  transition:background-color 0.3s ease-out; /*  ELD added 23-2-24 */
+		}
+		
+/* INVERSION COULEUR BORDURE / FOND */
+		.rectangle2:hover {
+		  /*  border-color: White; */ /* Couleur */ /* ELD: removed 23-02-24 */
+		  background-color: #BCBEC0; /* Couleur Bleue */
+		  color: #03243d;  /* ELD : changed 23-02-24, was black */
+		  
+		}		
+		.rectangle2 {
+		  width: 35vh;
+		  height: 8.5vh;
+		  /*  margin: 0vh;*//* removed ELD  */
+		  margin-left:0; /* Added ELD  */
+		  margin-right:0; /* Added ELD  */
+		  margin-top:2vh; /* Added ELD  */
+		  margin-bottom:2vh; /* Added ELD  */
+		  border-radius:5px;
+		  display: flex;
+		  text-align: center;
+		  align-items: center;
+		  justify-content: center;
+		  color: white; 
+		  font-size: 2.1vh;
+		  font-weight : normal ; /*bold; */
+		  letter-spacing: 1px;
+		  /* font-weight : bold; */
+		  background-color: transparent; 
+		  cursor: pointer;
+		  border-style:solid;
+		  border-width: 3px;
+		  border-color: #BCBEC0; /* Couleur Bleue */
+		  /*  transition:0.5s;*/ /*  ELD removed 23-2-24 */
+		  transition:background-color 0.3s ease-out; /*  ELD added 23-2-24 */
+		}
+
+/* INVERSION COULEUR BORDURE / FOND */
+		.rectangle3:hover {
+		  /* border-color: White;*/ /* Couleur */ /* ELD: removed 23-02-24 */
+		  background-color: #81BC00; /* Couleur vert */
+		  /* color: black; */ 
+		}		
+		.rectangle3 {
+		  width: 35vh;
+		  height: 8.5vh;
+		  /*  margin: 0vh;*//* removed ELD  */
+		  margin-left:0; /* Added ELD  */
+		  margin-right:0; /* Added ELD  */
+		  margin-top:2vh; /* Added ELD  */
+		  margin-bottom:2vh; /* Added ELD  */
+		  border-radius:5px;
+		  display: flex;
+		  text-align: center;
+		  align-items: center;
+		  justify-content: center;
+		  color: white; 
+		  font-size: 2.1vh;
+		  font-weight : normal ; /*bold; */
+		  letter-spacing: 1px;
+		  /* font-weight : bold; */ 
+		  background-color: transparent; 
+		  cursor: pointer;
+		  border-style:solid;
+		  border-width: 3px;
+		  border-color: #81BC00; /* Couleur vert */
+		  /*  transition:0.5s;*/ /*  ELD removed 23-2-24 */
+		  transition:background-color 0.3s ease-out; /*  ELD added 23-2-24 */
+		}
+
+/* INVERSION COULEUR BORDURE / FOND */
+		.rectangle4:hover {
+		  /*  border-color: White; *//* Couleur */ /* ELD: removed 23-02-24 */
+		  background-color: #FFC000; /* Couleur Orange */
+		  color: #03243d;  /* ELD : changed 23-02-24, was black */ 
+		  opacity:1;
+		}
+		.rectangle4 {
+		  width: 35vh;
+		  height: 8.5vh;
+		  /*  margin: 0vh;*//* removed ELD  */
+		  margin-left:0; /* Added ELD  */
+		  margin-right:0; /* Added ELD  */
+		  margin-top:2vh; /* Added ELD  */
+		  margin-bottom:2vh; /* Added ELD  */
+		  border-radius:5px;
+		  display: flex;
+		  text-align: center;
+		  align-items: center;
+		  justify-content: center;
+		  color: white; 
+		  font-size: 2.1vh;
+		  font-weight : normal ; /*bold; */
+		  letter-spacing: 1px;
+		  /* font-weight : bold; */ 
+		  background-color: transparent; 
+		  cursor: pointer;
+		  border-style:solid;
+		  border-width: 3px;
+		  border-color: #FFC000; /* Couleur Orange */
+		  /*  transition:0.5s;*/ /*  ELD removed 23-2-24 */
+		  transition:background-color 0.3s ease-out; /*  ELD added 23-2-24 */
+		}
+		
+		img {
+			height: 5vh;
+			margin: 2%;
+		}
+		

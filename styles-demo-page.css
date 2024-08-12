@@ -1,0 +1,151 @@
+:root {
+		--light-grey: rgba(228, 229, 230, 0.75);
+		--light-blue: rgb(36, 177, 217);
+		--dark-blue: rgb(28,53,94);
+}
+
+@font-face {
+    font-family: 'Neris';
+	src: local('Neris SemiBold'), 
+        url('Neris-SemiBold.woff2') format('woff2'),
+        url('Neris-SemiBold.woff') format('woff'),
+        url('Neris-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    /* src: url('chemin/vers/le/fichier-de-police.ttf') format('truetype'); */
+    /* Ajoutez d'autres formats de police si nécessaire (eot, woff, woff2, etc.) */
+}
+		
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Neris, sans-serif;
+	background-image: url('Harmonic_Background_Demos.jpg');
+	background-size: cover; /* Ajustez cette propriété selon vos besoins */
+	background-repeat: no-repeat; /* Empêche la répétition de l'image */
+	font-weight: normal;
+}
+h1 {
+	font-weight: normal;
+	font-size: 3.5vh; /* 2.5 fois la taille de police de base */
+}
+
+.header {
+	height: 5vh;
+	display: flex;
+	color: white;
+	font-size: 2vh;
+	font-weight: normal;
+	align-items: center;
+	justify-content: space-between;
+	width:95%;
+	margin: 0 auto;
+}
+.header img {
+	height: 60%;
+	}
+
+.back-button {
+	/* background-color: var(--light-blue);*/
+	color: var(--light-blue);
+	border: none;
+	font-size: 2vh;
+	padding: 0.5vh 2vh;
+	cursor: pointer;
+}
+.live-recorded-toggle-button {
+	/* background-color: var(--light-blue);*/
+	color: #24b1d9;
+	border: none;
+	font-size: 1.8vh;
+	padding: 0.5vh 2vh;
+	cursor: pointer;
+	text-decoration: none;
+}
+.live-recorded-toggle-button span {
+            color: #555; /* Couleur du texte gris */
+        }
+.content {
+  height: 95vh;
+  width:95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.content-full-screen{
+  height: 95vh;
+  width:95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.content-full-screen img{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.block {
+  flex-basis: 49%;
+  height: 49%; /* 0.1% est réservé pour la marge entre les blocs */
+  box-sizing: border-box;
+}
+
+.title {
+  height: 5%;
+   /* Changez cette couleur selon votre préférence */
+  color: white;
+  text-align: center;
+  font-size: 1.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0;
+}
+
+.block-content {
+  height: 95%; 
+  position: relative;
+}
+.block-content video {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.block-content img{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.webpage {
+	height:100%;
+	width:100%;
+}
+.microsoft-webpage {
+	height:100%;
+	width:100%;
+}
+.microsoft-webpage iframe {
+	transform: scale(0.57); /* Ajustez la valeur (0.8 dans cet exemple) pour le niveau de zoom souhaité */
+	transform-origin: 0 0; /* Centrez l'origine de la transformation pour le coin supérieur gauche */
+}
+
+.clock-webpage iframe {
+	
+	transform-origin: 0 0; /* Centrez l'origine de la transformation pour le coin supérieur gauche */
+	position: absolute;
+	bottom: 0;
+	top: 55%;
+	right: 5%; /* 100% - 75% */
+	
+	transform: translate(0, -40%);
+}
