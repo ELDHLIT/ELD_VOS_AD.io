@@ -1,5 +1,5 @@
 function goToPage1Recorded() {
-  window.location.href = "Monetization-demo1-VOS360-SSAI-Brand-Insertion-recorded.html";
+  window.location.href = "./SpectrumMediaSudio/SpectrumMediaSudioindex.html";
 }
 function goToPage1Live() {
   window.location.href = "Monetization-demo1-VOS360-SSAI-Brand-Insertion-live.html";
