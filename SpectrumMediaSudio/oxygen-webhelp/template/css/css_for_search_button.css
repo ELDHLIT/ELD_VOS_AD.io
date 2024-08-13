@@ -1,0 +1,75 @@
+.wh_search_button {
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    right: auto;
+    top: 0;
+    width: 2.8em;
+}
+.wh_search_button {
+    background-color: #04375A;
+    border: 1px solid #04375A; 
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    height: 2.8em;
+    padding: .6em 1em;
+}
+.wh_search_input {
+    /* padding: 4em 0 4em 0; */
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    color: #494949;
+    background-color: #04375A; 
+    /* text-align: center; */
+    text-align: right;
+    width:25em;
+}
+.wh_search_textfield {
+    padding-right: 3em;
+}
+
+/* SET COLORS FOR THE TOC */
+/* Background : ok */
+
+.wh_publication_toc {
+    border: 1px solid #dce5f2;
+    border-radius: 4px;
+    background-color: #dce5f2;
+    padding: 0;
+    line-height: 1.5em;
+    margin: 0 0
+}
+
+/*  ELD this line colors in Harmonic Blue the selected menu in the TOC */
+.wh_publication_toc .active>.topicref a {
+   color: #04375A;
+   font-weight: 700;
+}
+/*  ENDELD */
+
+/*  ELD this line colors in grey the non-selected menu in the TOC */
+.wh_publication_toc span,
+.wh_publication_toc a,
+.wh_publication_toc a:visited,
+.wh_publication_toc a:hover {
+  color: #7b7a7a;
+  text-decoration: none;
+  margin-bottom: 0.25em;
+}
+
+/* ELD remove 'home' icon */
+ .wh_breadcrumb ol, .wh_breadcrumb ol a {
+    color: #04375A;
+}
+
+.home a:before {
+    font-family: "Glyphicons Halflings", serif;
+    content: "\e021";
+    /*  display: none; */
+}
+
+.wh_breadcrumb li:not(:last-of-type):after {
+    content: "/";
+    padding: 0 5px;
+}

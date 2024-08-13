@@ -1,0 +1,44 @@
+/* ********************************************************************************* */
+/* creation of this file: October 6th 2023                                           */
+/* Author: Eric Le Doeuff                                                            */
+/* Purpose: This file is to associated the logos for note/warning/danger/caution/etc */
+/* with repect to Harmonic customisation                                             */
+/* In former code there were the following files :                                   */
+/*                  - caution.svg                                                    */
+/*                  - danger.svg                                                     */
+/*                  - important.svg                                                  */
+/*                  - note.svg                                                       */
+/*                  - remember.svg                                                   */
+/*                  - restriction.svg                                                */
+/*                  - troubleshooting.svg                                            */
+/*                  - warning.svg                                                    */
+/*  there are "Attention / caution / danger / fastpath/ important / note /notice      */
+/*  /remember/ restriction / tip / troubleshooting / warning" to cover                */
+/*                                                */
+/* under development, so far only 'note' and 'important' were found in Prostream     */
+/* ********************************************************************************* */
+div.attention, div.important {
+    background-image: url("../images/important.svg") !important;;
+}
+div.note {
+    background-image: url("../images/note.svg");
+    background-repeat: no-repeat;
+}
+div.danger {
+    background-image: url("../images/danger.svg");
+}
+div.caution {
+    background-image: url("../images/caution.svg");
+}
+div.remember {
+    background-image: url("../images/remember.svg");
+}
+div.restriction {
+    background-image: url("../images/restriction.svg");
+}
+div.troubleshooting {
+    background-image: url("../images/troubleshooting.svg");
+}
+div.warning {
+    background-image: url("../images/warning.svg");
+}

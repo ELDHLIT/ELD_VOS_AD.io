@@ -1,0 +1,939 @@
+/*
+ * ==============================================
+ * Skin for oXygen generated WebHelp.
+ * ==============================================
+ */
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Fonts.
+ *  
+ */
+ /* [SP] 2018-03-15 sfb: fetch 400 and 600 weights. */
+/*@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+/* Styles for presenting Harmonic product help using the styles outlined in http://uxhub:9001/styles/#type-headings*/
+/* Harmonic Web Help uses Google font Open Sans    */
+/* Harmonic corporate color palette:
+    * dark-accent-color: #00365B
+    * light-accent-color: #00a7d4
+ */
+body{
+    font-family: "Open Sans", arial, helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #333333;
+    background-color: #f6f8f8;
+}
+
+/*body {
+  font-family: "Open Sans", sans-serif;
+}*/
+
+img.image{
+    /* Based on Harmonic's Style Guide for responsive images */
+    /* apply bootstrap "image-responsive" styles to all img with class="image" */
+    /* width: 90%; */
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+img.image[width]{
+    width: inherit;
+}
+
+/* Figures:*/
+/* Make the desc stand out on new line, no bold*/
+/* Applies to <p class="figcap"> */
+p.figcap{
+    font-style: normal;
+    padding: 0px 10px 0px;
+}
+
+span.desc.figdesc{
+    display: block;
+    font-weight: normal;
+}
+
+div.fignone img{
+    padding: 10px 10px;
+}
+
+/* Applies when <p class="figcap"> is a descendant of <div class="fig fignone"> */
+/*<!--  KLL 2016-07-13 Removed inherited margin values, set to zero -->*/
+div.fignone p.figcap{
+    display: block;
+    font-weight: bold;
+    margin: 0;
+    padding: 0px 10px 0px;
+    text-align: left;
+}
+
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Fight with bootstrap
+ *  
+ */
+.navbar-brand {
+  height: auto;
+}
+.navbar {
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  box-shadow: none;
+}
+.wh_header {
+/* background-image: url("resources/images/bgr_blue.png"); */  
+  /* [SP] 2018-03-13 sfb: Replace image with solid color. */
+  background-color: #04375A;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  /* [SP] 2018-03-14 sfb: Reduce padding (top and bottom) to 0.  */
+/*  padding: 4em 0;*/
+  padding: 0 0;
+}
+a,
+a:hover,
+a:visited {
+  color: #00a7d4; /* [SP] 2018-03-26 sfb: color replacement. */
+}
+a:hover {
+  text-decoration: none;
+}
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Publication titles
+ *  
+ */
+.wh_publication_title > a {
+  /* [SP] 2018-03-14 sfb: Remove top and bottom padding.  */
+/*  padding: 2em 0;*/
+  padding: 0 0;
+  color: #ffffff;
+/*  text-transform: uppercase;*/
+/*  font-weight: bold;*/
+  font-weight: 400;
+  line-height: 1em;
+  font-size: 25px;
+/*  font-size: 1.8em;*/
+}
+@media only screen and (min-width: 768px) {
+  .wh_topic_page .wh_header {
+    padding: 0;
+  }
+}
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Menu
+ *  
+ */
+.wh_top_menu {
+  font-size: 1em;
+  margin: .4em 0;
+}
+.wh_top_menu ul a {
+  color: #ffffff;
+}
+/* The submenus */
+.wh_top_menu ul ul {
+  background-color: #04375A; /* [SP] 2018-03-26 sfb: color replacement. */
+}
+@media only screen and (min-width: 768px) {
+  .wh_top_menu > ul > li > .topicref > a {
+    background-color: transparent;
+    text-transform: uppercase;
+    margin: 0 2px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: none;
+  }
+  .wh_top_menu > ul > li > ul {
+    margin: 0 2px;
+  }
+  /* Menu bar */
+  .wh_top_menu ul li:hover a {
+    background-color: #04375A; /* [SP] 2018-03-26 sfb: color replacement. */
+    color: #ffffff;
+  }
+  /* Sub menus */
+  .wh_top_menu ul ul li {
+    border: none;
+    background-color: #04375A; /* [SP] 2018-03-26 sfb: color replacement. */
+  }
+  .wh_top_menu ul li:hover ul a {
+    color: #d9d9d9;
+    transition: background-color 0.25s ease-out 0s, color 0.3s ease-out 0s;
+  }
+  .wh_top_menu ul ul li a:hover {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.08);
+    transition: background-color 0.25s ease-in 0s, color 0.3s ease-in 0s;
+  }
+  .wh_top_menu ul ul li.has-children:after {
+    color: #d9d9d9;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wh_top_menu li a {
+    color: #ffffff;
+  }
+  .wh_top_menu li.active a {
+    color: #ffffff;
+  }
+  .wh_top_menu li.active {
+    background-color: #04375A; /* [SP] 2018-03-26 sfb: color replacement. */
+  }
+  .wh_top_menu li.active > span a {
+    background-color: rgba(0, 0, 0, 0.07);
+  }
+  .wh_toggle_button.navbar-toggle,
+  .wh_toggle_button.navbar-toggle:focus {
+    border: none;
+    border-color: #04375A; /* [SP] 2018-03-26 sfb: color replacement. */
+    background-color: #dce5f2;
+  }
+  .wh_toggle_button.navbar-toggle .icon-bar {
+    background-color: #04375A; /* [SP] 2018-03-26 sfb: color replacement. */
+  }
+  .wh_top_menu ul ul li {
+    border: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .wh_topic_page .wh_top_menu_and_indexterms_link {
+    display: inline-block !important;
+    padding: 0;
+  }
+}
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Link to the index.
+ * 
+ */
+@media only screen and (min-width: 768px) {
+  .wh_topic_page .wh_indexterms_link {
+    float: none;
+    display: inline-block;
+  }
+  .wh_topic_page .wh_indexterms_link a:before {
+    position: relative;
+    padding: 14px 14px 14px 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+  }
+}
+.wh_indexterms_link a:before {
+  color: #ffffff;
+  font-size: 1.6em;
+  position: relative;
+}
+.wh_indexterms_link a span {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .wh_indexterms_link a:before {
+    bottom: 0;
+  }
+}
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Tiles
+ * 
+ */
+.wh_tile {
+  border: 1px solid #939393;
+}
+.wh_tile_shortdesc {
+  color: #494949;
+  font-weight: 400;
+  font-size: 1em;
+  margin-top: 0.5em;
+  text-align: justify;
+}
+.wh_tile_title a {
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+  color: #04375A !important;
+/*  color: #2372de !important;*/
+  font-size: 1.3em;
+  font-weight: bold;
+}
+@media only screen and (max-width: 767px) {
+  .wh_tile > div {
+    height: auto;
+  }
+}
+/*
+ * ------------------------------------------------------------------
+ *
+ * Tree TOC for the main page.
+ *
+ */
+.wh_main_page_toc {
+  padding-left: 2em;
+  border: none;
+  border-left: 1px solid #939393;
+  background-color: #ffffff;
+}
+.wh_main_page_toc a {
+  color: #04375A; /* [SP] 2018-03-26 sfb: color replacement. */
+  font-size: 1.3em;
+}
+.wh_main_page_toc .wh_main_page_toc_accordion_header:before {
+  content: "\e081";
+  /* expand symbol */
+  left: -0.5em !important;
+  background-color: #ffffff;
+  font-size: 2em;
+}
+.wh_main_page_toc .wh_main_page_toc_accordion_header.expanded:before {
+  content: "\e082";
+  /* collapse symbol */
+}
+.wh_main_page_toc > .wh_main_page_toc_accordion_header,
+.wh_main_page_toc > .wh_main_page_toc_entry {
+  padding: 0.5em;
+  margin: 0.5em;
+  border: 1px solid #939393 !important;
+  font-weight: bold;
+}
+.wh_main_page_toc_accordion_header.expanded {
+  border-bottom: none !important;
+  margin-bottom: 0;
+}
+.wh_main_page_toc_accordion_header.expanded + .wh_main_page_toc_accordion_entries {
+  margin: 0 .5em .5em .5em;
+  border: 1px solid #939393;
+  border-top: none;
+}
+.wh_main_page_toc .wh_main_page_toc_accordion_header:hover,
+.wh_main_page_toc > .wh_main_page_toc_entry:hover {
+  background-color: rgba(147, 147, 147, 0.06);
+}
+.wh_main_page_toc .wh_main_page_toc_accordion_header,
+.wh_main_page_toc > .wh_main_page_toc_entry,
+.wh_main_page_toc_accordion_entries {
+  background-color: #ffffff;
+  text-align: left;
+}
+.wh_main_page_toc .wh_toc_shortdesc {
+  color: #494949;
+  background-color: transparent;
+  font-weight: normal;
+  font-size: 1em;
+}
+.wh_main_page_toc_accordion_header:before {
+  color: #04375A; /* [SP] 2018-03-26 sfb: color replacement. */
+}
+.wh_main_page_toc .expanded {
+  border: none;
+}
+/* ---------------------------------   */
+.wh_main_page .wh_content_area {
+  background-color: #ffffff;
+  padding: 4em 0 2em 0;
+  color: #04375A; /* [SP] 2018-03-26 sfb: color replacement. */
+  text-align: center;
+  align-items: center;
+}
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Search area
+ * 
+ */
+.wh_search_input {
+  /* [SP] 2018-03-14 sfb: Eliminate padding */
+/*  padding: 4em 0 4em 0;*/
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  color: #494949;
+  background-color: #ffffff;
+  /* [SP] 2018-03-14 sfb: Move to right */
+/*  text-align: center;*/
+  text-align: right;
+}
+.wh_search_textfield {
+  border: solid 1px #939393;
+  color: #494949;
+  background-color: #ffffff;
+  padding: 0 .4em;
+  height: 2em;
+  font-size: 1em;
+}
+.wh_search_textfield {
+/* [SP] 2018-03-19 sfb: Set to 0px, because the rounded corners were exposing underlayment. */
+/*  border-radius: 4px;*/
+  border-radius: 0px;
+}
+.wh_search_button {
+/*  border-radius: 0 4px 4px 0 !important;*/
+  border-radius: 0 !important;
+  /* [SP] 2018-03-19 sfb: Replace with Harmonic blue */
+/*  background-color: #2372de; */
+  background-color: #04375A;
+  color: #ffffff;
+}
+
+/* Search autocomplete icons */
+.search-autocomplete-proposal-type-history a,
+.search-autocomplete-proposal-type-history a:hover,
+.search-autocomplete-proposal-type-history a:visited,
+.search-autocomplete-proposal-type-history a:active {
+  text-decoration: none;
+  color: #04375A; /* [SP] 2018-03-26 sfb: color replacement. */
+  font-size: 0.8em;
+}
+.ui-state-active .search-autocomplete-proposal-type-history a,
+.ui-state-active .search-autocomplete-proposal-type-history a:hover,
+.ui-state-active .search-autocomplete-proposal-type-history a:visited,
+.ui-state-active .search-autocomplete-proposal-type-history a:active {
+  color: #ffffff;
+}
+/* Do not allow the text to go beneath the search button  */
+@media only screen and (min-width: 768px) {
+  .wh_search_textfield {
+    padding-right: 3em;
+  }
+}
+/* Search field placeholder */
+::-webkit-input-placeholder {
+  color: #494949;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #494949;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #494949;
+}
+:-ms-input-placeholder {
+  color: #494949;
+}
+/* Change Autocomplete styles in Chrome */
+:-webkit-autofill,
+:-webkit-autofill:hover,
+:-webkit-autofill:focus {
+  border: 1px solid #939393;
+  -webkit-text-fill-color: #494949;
+  -webkit-box-shadow: none;
+  transition: background-color 5000s ease-in-out 0s;
+}
+/*
+ * ------------------------------------------------------------------
+ *
+ * Footer
+ *
+ */
+.wh_footer {
+  /* [SP] 2018-03-14 sfb: Remove background image. */
+  /*  background-image: url("resources/images/bgr_blue.png");*/
+  /* [SP] 2018-03-14 sfb: Add background color */
+  background-color: #04375A;
+
+  background-repeat: repeat;
+  background-attachment: fixed;
+  padding-top: 4em; 
+  padding-bottom: 3em;
+  padding-left: 0em;
+  padding-right: 0em;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+}
+.wh_footer a {
+  color: #ffffff;
+}
+/*  
+.generation_time {
+  color: transparent;
+  font-size: 10pt;
+}*/ /*  moved by ELD to footer.css  */
+/*
+ * ------------------------------------------------------------------
+ *
+ * Topic content
+ *
+ */
+.wh_content_area {
+  background-color: #ffffff;
+  padding: 0;
+  font-size: 1em;
+  margin-bottom: 2em;
+  line-height: 1.7em;
+}
+.wh_topic_content {
+  color: #494949;
+}
+/*
+ * Title & subtitles
+ */
+.topictitle1 {
+/* [SP] 2018-03-23 sfb: was normal */
+  font-weight: 600;
+  color: #333333;
+}
+
+
+
+/*
+ * ------------------------------------------------------------------
+ *
+ * Breadcrumb
+ *
+ */
+.wh_breadcrumb ol {
+  padding: .5em;
+}
+.wh_breadcrumb ol,
+.wh_breadcrumb ol a {
+  color: #939393;
+}
+.wh_breadcrumb ol .active a {
+  color: #04375A; /* [SP] 2018-03-26 sfb: color replacement. */
+}
+.home a span {
+  display: none;
+}
+.home a:before {
+  font-family: "Glyphicons Halflings", serif;
+  content: "\e021";
+}
+/*
+ * ------------------------------------------------------------------
+ *
+ * Tools and navigation
+ *
+ */
+.wh_tools {
+  border-bottom: solid 1px #dce5f2;
+  background-color: #ffffff;
+  margin: 2em 1em;
+  font-size: 1em;
+}
+
+/*MUCH MORE TO DO WITH LINKS THAN I HAVE TIME FOR TODAY. MUSTFIX */
+.wh_hide_highlight,
+.wh_print_link a,
+.wh_navigation_links a,
+.wh_navigation_links a:hover,
+.wh_navigation_links a:active,
+.wh_navigation_links a:visited,
+.wh_print_link a:before,
+.wh_navigation_links a:before,
+.wh_navigation_links a:hover:before,
+.wh_navigation_links a:active:before,
+.wh_navigation_links a:visited:before {
+  color: #04375A; /* [SP] 2018-03-26 sfb: color replacement. */
+/*    color: #00a7d4;*/
+
+  text-decoration: none;
+}
+.wh_right_tools {
+  padding: 8px 15px;
+}
+/*
+ * Other content
+ */
+.wh_topic_content .shortdesc {
+/* [SP] 2018-03-23 sfb: Changed to normal from italic. */
+  font-style: normal;
+}
+/*
+ * ------------------------------------------------------------------
+ *
+ * Side TOC
+ *
+ */
+.wh_side_toc {
+  border: 1px solid #dce5f2;
+  border-radius: 4px;
+  background-color: #dce5f2;
+  padding: 1em;
+  /* [SP] 2018-04-03 sfb: Scriptorium changed from 2em to better identify wrapped lines in side toc. */
+  line-height: 1.5em;
+  margin-left: 2em;
+}
+.wh_side_toc > ul {
+  padding-left: 0;
+}
+.wh_side_toc .active > .topicref a {
+  color: #04375A; /* [SP] 2018-03-26 sfb: color replacement. */
+  font-weight: bold;
+}
+.wh_side_toc span,
+.wh_side_toc a,
+.wh_side_toc a:visited,
+.wh_side_toc a:hover {
+  color: #7b7a7a;
+  text-decoration: none;
+  /* [SP] 2018-04-03 sfb: Scriptorium added to better identify wrapped lines in side toc. */
+  margin-bottom: 0.25em;
+}
+@media only screen and (max-width: 767px) {
+  .wh_side_toc {
+    padding: 1em;
+    margin-left: 0;
+    margin-top: 1em;
+  }
+}
+/* Side TOC tooltip */
+.wh_breadcrumb .topicref .wh-tooltip,
+.wh_side_toc .topicref .wh-tooltip {
+  background-color: #04375A; /* [SP] 2018-03-26 sfb: color replacement. */
+  color: #ffffff;
+}
+.wh_breadcrumb .topicref .wh-tooltip a,
+.wh_side_toc .topicref .wh-tooltip a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+/* Tooltip arrow. */
+[data-tooltip-position="left"] .topicref .wh-tooltip::before {
+  border-left-color: #04375A; /* [SP] 2018-03-26 sfb: color replacement. */
+}
+[data-tooltip-position="right"] .topicref .wh-tooltip::before {
+  border-right-color: #04375A; /* [SP] 2018-03-26 sfb: color replacement. */
+}
+[data-tooltip-position="bottom"] .topicref .wh-tooltip::before {
+  border-bottom-color: #04375A; /* [SP] 2018-03-26 sfb: color replacement. */
+}
+[data-tooltip-position="top"] .topicref .wh-tooltip::before {
+  border-top-color: #04375A; /* [SP] 2018-03-26 sfb: color replacement. */
+}
+/* Related links */
+/* JRH 2018 May 31 Removed padding from left margin. */
+.wh_related_links .related-links,
+.wh_topic_content .related-links,
+.wh_child_links {
+  margin: 1em 0 0 0;
+  background-color: #ffffff;
+  /* [SP] 2018-03-26 sfb: turn off border */
+/*  border: #dce5f2 solid 1px;*/
+  border: #ffffff none 0px;
+  border-radius: 4px;
+  padding: 0 0em;
+}
+/*  JRH 2018 May 31 Removed padding to align ul child links with left margin.*/
+.wh_child_links .ullinks {
+    padding: 0;
+}
+
+/*  JRH 2018 November 1 Added padding to ol child links (output from collection-type="sequence").*/
+.wh_child_links .olchildlinks {
+    padding: 1em;
+}
+
+.wh_topic_content .related-links {
+  font-size: .91em;
+}
+/*
+ * ------------------------------------------------------------------
+ *
+ * Search results.
+ *
+ */
+ 
+.searchresult {
+  list-style: none;
+  line-height: 1.5em;
+}
+.searchresult li {
+  padding: .5em;
+}
+.searchresult li a {
+  color: #00a7d4; /* [SP] 2018-03-26 sfb: color replacement. */
+}
+
+.searchresult li a.foundResult {
+    font-size: 16px;
+}
+
+.wh_search_expression {
+  color: #04375A; /* [SP] 2018-03-26 sfb: color replacement. */
+}
+
+/*  JRH 2018 November 1 Hiding relativePath in search results per team decision. */
+.searchresult li .relativePath {
+    display: none;
+}
+
+/* Search relative path
+.searchresult li .relativePath a {
+  color: #006621;
+}*/
+
+.searchresult .shortdesclink {
+  margin: .3em .5em 0 0;
+}
+.wh_search_expression {
+  font-weight: bold;
+}
+/* Highlights */
+.highlight {
+  background-color: #dce5f2;
+  color: #04375A !important;
+/*  color: #2372de !important;*/
+  border-radius: 4px;
+  padding: 0 1px;
+}
+.wh-h {
+  padding: 0 1px;
+}
+/* Index terms */
+.wh_term_group {
+  border-bottom: 1px solid #dce5f2;
+  background-color: #ffffff;
+  margin: 1em 0;
+  padding: 1em;
+}
+.wh_term > span {
+  color: #494949;
+  font-style: italic;
+}
+.wh_index_terms span.wh_first_letter {
+  color: #04375A; /* [SP] 2018-03-26 sfb: color replacement. */
+  border: none;
+  font-size: 1.5em;
+  margin: 0;
+}
+.wh_index_terms #indexList {
+  padding: 0;
+}
+
+/* ******************************************************************* */
+/* [SP] 2018-03-14 sfb: Harmonic additions */
+.harmonic_logo {
+  width: 10em;
+  height: 4em;
+  background-image: url("../images/White_Logo.Transparent.png"); /* MODIF ELD 14/09/23 path is absolute path wrt skin.css file */
+  background-size: contain;
+  background-repeat: no-repeat;
+
+   margin: 1em;
+   margin-top: 2em;
+}
+/* ******************************************************************** */
+
+
+/*JRH 28 June 2018 Changing default styling for <dl> to table format (copied code from com.harmonic.common plugin in dita-ot2.x).
+/* Also adding styling for dl-paragraph outputclass. */
+/* Increased dlterm width to 25% */ 
+dl.dl{
+    position: relative;
+    clear: both;
+    margin-top: 10px;
+}
+dl.dl dt.dt,
+dl.dl dt.dthd,
+dl.dl dt.dt.dlterm{
+    float: left;
+    clear: both;
+    width: 25%;
+}
+dl.dl dt.dt.dlterm,
+dl.dl dt.dthd{
+    font-weight: bold;
+}
+
+dl.dl dt.dthd,
+dl.dl dd.ddhd{
+    background-color: #dce5f2;
+    margin-bottom: 6px;
+}
+
+dl.dl dd.dd,
+dl.dl dd.ddhd{
+    float: left;
+    width: 75%;
+    margin-left: 0;
+ /* padding-bottom: 10px; */
+}
+
+.dl > dd.dd > .cautiontitle,
+.dl > dd.dd > .dangertitle{
+    display: block;
+    clear: none;
+}
+
+.dl > dd.dd > div.note{
+    clear: none;
+    display: block;
+}
+
+/*KLL 2017-01-25 Updated <dl outputclass="dl-paragraph"> to match PDF output  */
+dl.dl-paragraph{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dl-paragraph dt.dt{
+    line-height: 1.42857;
+    margin-left: 0;
+    display: block;
+    float: left;
+}
+
+.dl-paragraph dd.dd{
+    padding-left: 20px;
+    /*margin-start: 0;*/
+    display: block;
+    line-height: 1.42857;
+    clear: both;
+}
+
+.dl-paragraph > dd.dd > .cautiontitle,
+.dl-paragraph > dd.dd > .dangertitle{
+    display: block;
+    clear: none;
+}
+
+.dl-paragraph > dd.dd > .note{
+    clear: both;
+}
+
+/* JRH 29 June 2018 Adding clear property for floating elements (copied code from com.harmonic.common plugin in dita-ot2.x). */
+
+div.p,
+p.p,
+p{
+    clear: both;
+}
+
+.title.sectiontitle{
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+div.itemgroup.stepxmp,
+div.itemgroup.stepresult{
+    clear: both;
+}
+
+.related-links{
+    clear: both;
+}
+
+div.note,
+div.trouble,
+div.warning,
+div.important,
+div.tip,
+div.danger,
+div.notice,
+div.attention{
+    display: block;
+    clear: both;
+}
+
+li.li{
+    display: list-item;
+    clear: both;
+    text-align: -webkit-match-parent;
+    text-align: match-parent;
+}
+
+/* JRH 1 November 2018 Adding list style for child links output as ol (collection-type="sequence"). */
+
+.olchildlinks li {
+    list-style: decimal;
+}
+
+/*  JRH 11 July 2018 Add prefix formatting to <example> <stepxmp> <result> <stepresult> (copied code from com.harmonic.common plugin in dita-ot2.x) */
+.example > h2.title.sectiontitle:before,
+div.itemgroup.stepxmp:before{
+    font-size: 14px;
+    border: none;
+    font-weight: 600;
+    content: "Example: ";
+}
+
+/* JRH 31 January 2019 Removing task <result> label output per team decision (TechPubs-631).  */
+div.itemgroup.stepresult:before{
+    content: "Result: ";
+    font-size: 14px;
+    border: none;
+    font-weight: 600;
+}
+/* JRH 17 July 2018 Adding labels for <prereq> and <postreq> output (copied code from com.harmonic.common plugin in dita-ot2.x) */
+/* Note that there are two versions of formatting for Prerequisites. 
+One set is for manaually added <prereq> elements, 
+The other set is for auto-generated Prereq links. 
+The two styles have been set up to be identical. 
+Only one type of prereq should be present on a topic. 
+Label for auto-generated prereqs (importance="required") is stored in 
+ com.oxygenxml.webhelp.responsive\oxygen-webhelp\resources\localization\strings-en-us.xml */
+
+.section.prereq.p:before {
+  content: "Before you begin   ";
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  display: block;
+}
+
+.section.prereq.p p.p {
+  margin-left: 0px;
+  margin-bottom: 0px;
+  font-size: 13.3333px;
+}
+
+dt.prereq {
+  margin-left: 0px;
+}
+
+.section.postreq:before {
+  content: "What to do next   ";
+  display: block;
+  font-weight: bold;
+}
+
+.section.postreq p.p {
+  font-size: 13.3333px;
+  line-height: 1.42857;
+}
+
+/* JRH 25 July 2018  By default, when <steps> or <substeps> contains a block element, extra space is added.
+ * Making spacing consistent when steps are expanded and when they are not. */
+
+.step,
+.substep,
+.stepexpand,
+.substepexpand { 
+    margin-top: .5em; 
+    margin-bottom: .5em; 
+    line-height: 1.7em;
+}
+
+div.itemgroup > .note { 
+    margin-top: .5em; 
+    margin-bottom : .5em;
+}
+
+/* JRH 1 August 2018 Changing font weight to normal. */
+
+.caution {
+    font-weight: normal;
+}
+
+/* JRH 8 August 2018 Adding custom style for cmdname */
+
+.cmdname,
+.apiname {
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+    font-weight: bold;
+}

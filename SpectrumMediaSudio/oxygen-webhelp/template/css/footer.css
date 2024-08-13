@@ -1,0 +1,12 @@
+
+/*  ELD get the two lines of footer one below the other */
+.wh_footer {
+    flex-direction: column;
+}
+
+/* ELD: the code below is to have the second line of the copyright, */
+/* ie the generation time only visible when selected */
+.generation_time {
+  color: transparent;
+  font-size: 10pt;
+}
