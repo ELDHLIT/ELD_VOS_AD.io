@@ -1,5 +1,5 @@
 function goToPageSMS() {
-  window.location.href = "./SpectrumMediaSudio/SpectrumMediaSudioindex.html";
+  window.location.href = "./SpectrumMediaSudio/SpectrumMediaStudioindex.html";
 }
 function goToPagevosad() {
   window.location.href = "./vosAddGQL/public/indexvosadd.html";
