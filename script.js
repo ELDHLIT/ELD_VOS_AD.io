@@ -14,6 +14,10 @@ function goToPageTheneo() {
 function goToPageNMX() {
   window.location.href = "./NMX/NMXindex.html";
 }
+function goToPageMagidoc() {
+  window.location.href = "./magidoc/medium-article.html";
+}
+
 function goToPage1Recorded() {
   window.location.href = "./SpectrumMediaSudio/SpectrumMediaSudioindex.html";
 }
